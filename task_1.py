@@ -1,7 +1,3 @@
-# лабораторная работа номер 0 
-# выполнил: Жегалин Александр Евгеньевич 
-# ИВТИИбд-12
-# дата 
 # Лабораторная №1: Первичная инициализация
 # Курс: Основы теории систем
 # Студент: Жегалин Александр Евгеньевич 
@@ -12,9 +8,9 @@ def get_system_info():
     """
     # TODO: Заполните словарь вашими реальными данными
     system_info = {
-        "student_name": "Иванов Иван Иванович",
-        "academic_group": "ИВТИИбд-11",
-        "github_link": "https://github.com/ivanov_ivan"
+        "student_name": "Жегалин Александр Евгеньевич",
+        "academic_group": "ИВТИИбд-12",
+        "github_link": "https://github.com/shliva1/ots_practice_2026"
     }
     return system_info
 
