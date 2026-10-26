@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имеетАвтора -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имеетАвтора">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имеетАвтора"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имеетАвтора"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#автор"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаВзятаЧитателем -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаВзятаЧитателем">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаВзятаЧитателем"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаВзятаЧитателем"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#читатель"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаИзданаИздательством -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаИзданаИздательством">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаИзданаИздательством"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книгаИзданаИздательством"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#издательство"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#ISBNкнии -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#ISBNкнии">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#годИздания -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#годИздания">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имяАвтора -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имяАвтора">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#автор"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имяЧитателя -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#имяЧитателя">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#читатель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#названиеИздательства -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#названиеИздательства">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#издательство"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#названиеКниги -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#названиеКниги">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#автор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#автор"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#издательство -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#издательство"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#читатель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#читатель"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#АСТ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#АСТ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#издательство"/>
+        <untitled-ontology-4:названиеИздательства>АСТ</untitled-ontology-4:названиеИздательства>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Война_и_мир -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Война_и_мир">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#книга"/>
+        <untitled-ontology-4:имеетАвтора rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Лев_Толстой"/>
+        <untitled-ontology-4:книгаВзятаЧитателем rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Петр_Ивнв"/>
+        <untitled-ontology-4:книгаИзданаИздательством rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#АСТ"/>
+        <untitled-ontology-4:ISBNкнии rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">978-5-17-118123-4</untitled-ontology-4:ISBNкнии>
+        <untitled-ontology-4:годИздания rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1869</untitled-ontology-4:годИздания>
+        <untitled-ontology-4:названиеКниги>Война и мир</untitled-ontology-4:названиеКниги>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Лев_Толстой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Лев_Толстой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#автор"/>
+        <untitled-ontology-4:имяАвтора>Лев Толстой</untitled-ontology-4:имяАвтора>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Петр_Ивнв -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#Петр_Ивнв">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleks/ontologies/2026/8/untitled-ontology-4#читатель"/>
+        <untitled-ontology-4:имяЧитателя>Петр Иванов</untitled-ontology-4:имяЧитателя>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
